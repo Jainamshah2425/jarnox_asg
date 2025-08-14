@@ -1,0 +1,160 @@
+# Root level gitignore for Stock Dashboard project
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.backup
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+lib-cov
+coverage/
+*.lcov
+.nyc_output
+
+# Build outputs
+build/
+dist/
+.next
+.nuxt
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache  
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.idea/
+.history/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary folders
+tmp/
+temp/
+
+# API keys and secrets
+config/secrets.js
+keys.js
+
+# Source maps
+*.map
+
+# Documentation build
+docs/_build/
+
+# Test results
+test-results/
+junit.xml
+
+# PM2 process file
+ecosystem.config.js
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# MacOS specific
+.AppleDouble
+.LSOverride
+
+# Windows specific
+*.lnk
+[Dd]esktop.ini
+
+# Linux specific
+*~
+
+# Vim swap files
+*.swp
+*.swo
+
+# Emacs backup files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Project specific ignores
+/backend/uploads/
+/frontend/public/uploads/
+screenshots/
+mockups/
+wireframes/
+README.md

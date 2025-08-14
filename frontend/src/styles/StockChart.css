@@ -1,0 +1,152 @@
+.stock-chart-container {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.price-info {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.price-change {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: var(--border-radius);
+}
+
+.price-change.positive {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--success-color);
+}
+
+.price-change.negative {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--danger-color);
+}
+
+.chart-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.chart-action-btn {
+  background: none;
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius);
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  color: var(--dark-gray);
+  transition: all 0.2s ease;
+}
+
+.chart-action-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.chart-action-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.chart-wrapper {
+  height: 400px;
+  position: relative;
+}
+
+.chart-footer {
+  margin-top: 20px;
+  border-top: 1px solid var(--medium-gray);
+  padding-top: 15px;
+}
+
+.chart-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--dark-gray);
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .chart-actions {
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+  
+  .chart-wrapper {
+    height: 300px;
+  }
+  
+  .chart-stats {
+    justify-content: flex-start;
+  }
+  
+  .stat-item {
+    min-width: 80px;
+  }
+}
+
+/* Mini chart styles */
+.stock-chart-container.mini {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  height: 200px;
+}
+
+.mini-chart-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.mini-chart-wrapper canvas {
+  border-radius: 8px;
+}

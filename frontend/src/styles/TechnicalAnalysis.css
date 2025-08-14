@@ -1,0 +1,281 @@
+.technical-analysis {
+  background: linear-gradient(135deg, #7b869c 0%, #7c9cd3 100%);
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.analysis-header h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.timerange-select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 0.9em;
+}
+
+.timerange-select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Signals Section */
+.signals-section {
+  margin-bottom: 24px;
+}
+
+.signals-section h4 {
+  margin: 0 0 16px 0;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.signals-list {
+  display: grid;
+  gap: 12px;
+}
+
+.signal-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid;
+}
+
+.signal-item.buy {
+  border-left-color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.signal-item.sell {
+  border-left-color: #f87171;
+  background: rgba(248, 113, 113, 0.1);
+}
+
+.signal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.signal-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.signal-type.buy {
+  background: #4ade80;
+  color: #064e3b;
+}
+
+.signal-type.sell {
+  background: #f87171;
+  color: #7f1d1d;
+}
+
+.signal-name {
+  font-weight: 600;
+  flex: 1;
+}
+
+.signal-strength {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.signal-strength.strong {
+  background: #fbbf24;
+  color: #78350f;
+}
+
+.signal-strength.medium {
+  background: #60a5fa;
+  color: #1e3a8a;
+}
+
+.signal-strength.weak {
+  background: #9ca3af;
+  color: #374151;
+}
+
+.signal-description {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Indicators Summary */
+.indicators-summary {
+  margin-bottom: 24px;
+}
+
+.indicators-summary h4 {
+  margin: 0 0 16px 0;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.indicators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.indicator-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.indicator-name {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.indicator-value {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.indicator-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.indicator-status.bullish {
+  background: #4ade80;
+  color: #064e3b;
+}
+
+.indicator-status.bearish {
+  background: #f87171;
+  color: #7f1d1d;
+}
+
+.indicator-status.overbought {
+  background: #f59e0b;
+  color: #78350f;
+}
+
+.indicator-status.oversold {
+  background: #3b82f6;
+  color: #1e3a8a;
+}
+
+.indicator-status.neutral {
+  background: #6b7280;
+  color: #f9fafb;
+}
+
+/* Overall Sentiment */
+.overall-sentiment {
+  text-align: center;
+}
+
+.overall-sentiment h4 {
+  margin: 0 0 16px 0;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sentiment-indicator {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid;
+}
+
+.sentiment-indicator.bullish {
+  border-color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.sentiment-indicator.bearish {
+  border-color: #f87171;
+  background: rgba(248, 113, 113, 0.1);
+}
+
+.sentiment-indicator.neutral {
+  border-color: #6b7280;
+  background: rgba(107, 114, 128, 0.1);
+}
+
+.sentiment-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.sentiment-description {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* Loading and Error States */
+.technical-analysis.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  color: #6b7280;
+}
+
+.technical-analysis.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: linear-gradient(135deg, #fca5a5 0%, #ef4444 100%);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .analysis-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .indicators-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .signal-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+}

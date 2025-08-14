@@ -1,0 +1,115 @@
+.company-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.company-list-header {
+  padding: 15px;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.company-list-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.search-box {
+  position: relative;
+}
+
+.company-search {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.company-search:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.companies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--medium-gray);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.company-item:hover {
+  background-color: rgba(25, 118, 210, 0.05);
+}
+
+.company-item.selected {
+  background-color: rgba(25, 118, 210, 0.1);
+  border-left: 3px solid var(--primary-color);
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.company-name {
+  margin: 0 0 5px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.company-symbol {
+  font-size: 0.85rem;
+  color: var(--dark-gray);
+}
+
+.company-change {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 3px 8px;
+  border-radius: var(--border-radius);
+}
+
+.company-change.positive {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--success-color);
+}
+
+.company-change.negative {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--danger-color);
+}
+
+.company-list-message {
+  padding: 20px;
+  text-align: center;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}

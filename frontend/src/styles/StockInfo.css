@@ -1,0 +1,134 @@
+.stock-info {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.company-title {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.company-title h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.company-symbol {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.company-exchange {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.company-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sector-badge,
+.industry-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.sector-badge {
+  background-color: rgba(25, 118, 210, 0.1);
+  color: var(--primary-color);
+}
+
+.industry-badge {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: var(--info-color);
+}
+
+.time-range-selector {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--medium-gray);
+  padding-bottom: 15px;
+}
+
+.time-range-btn {
+  background: none;
+  border: none;
+  padding: 5px 12px;
+  margin-right: 5px;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.time-range-btn:hover {
+  color: var(--primary-color);
+}
+
+.time-range-btn.active {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.time-range-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.company-description {
+  margin-top: 20px;
+}
+
+.company-description h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  color: var(--secondary-color);
+}
+
+.company-description p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--dark-gray);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .company-header {
+    flex-direction: column;
+  }
+  
+  .time-range-selector {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  
+  .time-range-btn {
+    padding: 5px 8px;
+  }
+}
